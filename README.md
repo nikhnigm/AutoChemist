@@ -56,10 +56,10 @@ graph TD
 ├── src/
 │   ├── workflow.py           # The Temporal Orchestrator (State Machine)
 │   ├── agent.py              # The AI Chemist (Groq + Llama-3)
-│   ├── docking.py            # The Physics Engine (RDKit container)
-│   └── infrastructure_test.py # Smoke test for cloud connectivity
+│   └── docking.py            # The Physics Engine (RDKit container)
+├── scripts/
+│   └── verify_setup.py       # Smoke test for cloud connectivity
 ├── requirements.txt          # Project dependencies
-├── .gitignore                # Git configuration
 └── README.md                 # Documentation
 ```
 
@@ -135,5 +135,6 @@ Open the Temporal UI at http://localhost:8233 to visualize the workflow in real-
 | **Environment** | **Modal (Docker)** | Implements "Infrastructure as Code" by defining complex bio-dependencies (`openbabel`, `meeko`) directly in Python, eliminating manual container setup. |
 | **Inference** | **Groq LPU** | Ultra-low latency inference enables tight, rapid iterative feedback loops that would be too slow on standard GPU hardware. |
 | **Safety** | **Regex & RDKit** | Implements "Cheminformatics Guardrails" to parse AI output and mathematically verify that generated SMILES strings represent valid molecular graphs. |
+
 
 
