@@ -136,3 +136,4 @@ Open the Temporal UI at http://localhost:8233 to visualize the workflow in real-
 | **Inference** | **Groq LPU** | Ultra-low latency inference enables tight, rapid iterative feedback loops that would be too slow on standard GPU hardware. |
 | **Safety** | **Regex & RDKit** | Implements "Cheminformatics Guardrails" to parse AI output and mathematically verify that generated SMILES strings represent valid molecular graphs. |
 
+
